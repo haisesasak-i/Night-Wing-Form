@@ -15,8 +15,7 @@
     --font-weight-header-sub: 600;
     --text-color-header-sub: rgba(255, 255, 255, 0.91);
     --margin-top-header-sub: 2%;
-    --fieldset-bg: transparent;
-    --fieldset-padding: 2rem;
+
 
 }
 
@@ -94,15 +93,9 @@ div.right {
 
 
     }
+    
 
-    >form>fieldset {
-        border: none;
-        background-color: var(--fieldset-bg);
-        padding: var(--fieldset-padding);
 
-        >legend {}
-
-    }
 
 
 
