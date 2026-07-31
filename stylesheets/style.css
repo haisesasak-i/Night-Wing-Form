@@ -1,0 +1,20 @@
+:root {
+    --background-color-body: #0079be;
+    --height-body: 100vh;
+    --left-image-width: 30%;
+    --left-image-height: 100%;
+
+
+}
+
+body {
+    background-color: var(--background-color-body);
+    height: var(--height-body);
+
+}
+
+div.left {
+    width: var(--left-image-width);
+    height: var(--left-image-height);
+    background: url("/images/NightWing.jpg") center/cover no-repeat;
+}
