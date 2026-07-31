@@ -18,6 +18,7 @@
     --padding-fields-container: 1rem 0;
     --width-fields-container: 90%;
     --font-size-heading: clamp(0.8rem, 0.8rem + 2vw, 1.5rem);
+    --width-label: 30%;
 
 
 
@@ -110,19 +111,39 @@ div.right {
         width: var(--width-fields-container);
         padding: var(--padding-fields-container);
         outline: 2px solid red;
-        
+        flex-direction: column;
+        gap: 15px;
+
 
         >h2 {
             font-size: var(--font-size-heading);
         }
 
+        .form-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            outline: 5px solid green;
+
+        }
+
     }
+}
+
+div.field {
+    flex: 1;
+    gap: 10px;
+    min-width: 160px;
+    display: flex;
+    outline: 3px solid red;
+    flex-direction: column;
 
 
 
 
-
-
-
+    input,
+    select {
+        width: 100%;
+    }
 
 }
