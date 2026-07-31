@@ -17,8 +17,14 @@
     --margin-top-header-sub: 2%;
     --padding-fields-container: 1rem 0;
     --width-fields-container: 90%;
-    --font-size-heading: clamp(0.8rem, 0.8rem + 2vw, 1.5rem);
-    --width-label: 30%;
+
+    --width-fields: 100%;
+    --font-size-fields: 0.9rem;
+    --font-size-heading: 1.8rem;
+    --padding-input: 8px;
+    --border-radius: 12px;
+    --font-size-label: 1rem;
+
 
 
 
@@ -110,9 +116,9 @@ div.right {
     >form>.fields {
         width: var(--width-fields-container);
         padding: var(--padding-fields-container);
-        outline: 2px solid red;
+
         flex-direction: column;
-        gap: 15px;
+        gap: 8px;
 
 
         >h2 {
@@ -123,7 +129,7 @@ div.right {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
-            outline: 5px solid green;
+
 
         }
 
@@ -132,10 +138,10 @@ div.right {
 
 div.field {
     flex: 1;
-    gap: 10px;
-    min-width: 160px;
+    gap: 8px;
+    min-width: 165px;
     display: flex;
-    outline: 3px solid red;
+
     flex-direction: column;
 
 
@@ -143,7 +149,36 @@ div.field {
 
     input,
     select {
-        width: 100%;
+        width: var(--width-fields);
+        padding: var(--padding-input);
+        border-radius: var(--border-radius);
+        font-size: var(--font-size-fields);
     }
 
+    label {
+        font-size: var(--font-size-label);
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+
+}
+
+input,
+select {
+    outline: none;
+    border: 3px solid rgb(243, 234, 234);
+}
+
+input:focus,
+select:focus {
+    border: 3px solid rgba(0, 0, 0, 0.783);
+}
+
+input[type="password"]:not(:placeholder-shown):valid {
+    border: 3px solid #1cff7b;
+}
+
+input[type="password"]:not(:placeholder-shown):user-invalid {
+    border: 3px solid #e83622;
 }
