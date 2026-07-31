@@ -2,12 +2,12 @@
     --background-color-body: #0079be;
     --text-color-body: white;
     --height-body: 100vh;
-    --left-image-width: 30%;
+    --left-image-width: 35%;
     --left-image-height: 100%;
     --font-family: 'Poppins', 'Century Gothic', Futura, sans-serif;
     --font-size-attribution: clamp(0.6rem, 0.6rem + 2vw, 1rem);
     --font-size-link-weight: bold;
-    --font-size-logo: clamp(0.8rem, 0.8rem + 0.5vw, 1.5rem);
+    --font-size-logo: clamp(0.7rem, 0.7rem + 0.5vw, 1.2rem);
     --font-weight-logo: bold;
     --font-size-header-main: clamp(0.5rem, 0.5rem + 2vw, 2rem);
     --font-weight-header-main: bold;
@@ -15,6 +15,10 @@
     --font-weight-header-sub: 600;
     --text-color-header-sub: rgba(255, 255, 255, 0.91);
     --margin-top-header-sub: 2%;
+    --padding-fields-container: 1rem 0;
+    --width-fields-container: 90%;
+    --font-size-heading: clamp(0.8rem, 0.8rem + 2vw, 1.5rem);
+
 
 
 }
@@ -24,7 +28,7 @@ body {
     height: var(--height-body);
     font-family: var(--font-family);
     color: var(--text-color-body);
-    gap: 10px;
+    gap: 20px;
 
 }
 
@@ -59,14 +63,22 @@ div.left {
     }
 
     .logo {
-        width: 40%;
-        margin-top: 10%;
+
 
         >p {
             color: black;
             font-size: var(--font-size-logo);
             font-weight: var(--font-weight-logo);
             text-align: center;
+            width: 55%;
+
+        }
+
+        img {
+            width: 55%;
+            text-align: center;
+
+
         }
 
     }
@@ -93,7 +105,21 @@ div.right {
 
 
     }
-    
+
+    >form>.fields {
+        width: var(--width-fields-container);
+        padding: var(--padding-fields-container);
+        outline: 2px solid red;
+        
+
+        >h2 {
+            font-size: var(--font-size-heading);
+        }
+
+    }
+
+
+
 
 
 
