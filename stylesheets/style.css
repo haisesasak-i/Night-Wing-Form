@@ -92,7 +92,18 @@ div.right {
         }
 
 
+
     }
+
+    >form>fieldset {
+        border: none;
+        background-color: var(--fieldset-bg);
+        padding: var(--fieldset-padding);
+
+        >legend {}
+
+    }
+
 
 
 }
