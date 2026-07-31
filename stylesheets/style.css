@@ -52,7 +52,7 @@ body {
 div.left {
     width: var(--left-image-width);
     height: var(--left-image-height);
-    background: url("./images/NightWing.jpg") center/cover no-repeat;
+    background: url("../images/NightWing.jpg") center/cover no-repeat;
     position: relative;
     justify-content: flex-start;
 
