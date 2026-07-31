@@ -31,8 +31,73 @@
                 rooftops are getting bigger, and so is the list of threats.</p>
             <p> Sign up to join the ones who move before trouble does.</p>
         </div>
+        <form action="submit.php" method="post">
+            <fieldset>
+                <legend>Join the Watch</legend>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" inputmode="text" name="first-name" placeholder="Bruce"
+                            autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" inputmode="text" name="last-name" placeholder="Wayne"
+                            autocomplete="family-name" required>
+                    </div>
+
+
+                </div>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" inputmode="email" name="email"
+                            placeholder="BruceWayne@example.com" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="turf">YOUR TURF</label>
+                        <select id="turf" name="turf" required>
+                            <option value="" disabled selected hidden>Select your city</option>
+                            <option value="gotham">Gotham City</option>
+                            <option value="bludhaven">Bludhaven</option>
+                            <option value="metropolis">Metropolis</option>
+                            <option value="star-city">Star City</option>
+                            <option value="central-city">Central City</option>
+                            <option value="other">Other (specify)</option>
+                        </select>
+
+                    </div>
+
+
+
+                </div>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" inputmode="text" name="pass" placeholder="........."
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            title="Min 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character (@$!%*?&)"
+                            autocomplete="new-password" required>
+                    </div>
+                    <div class="field">
+                        <label for="confirm-pass">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-pass" inputmode="text" name="confirm-pass"
+                            placeholder="........."
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            title="Min 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character (@$!%*?&)"
+                            autocomplete="new-password" required>
+                    </div>
+
+
+                </div>
+
+            </fieldset>
+
+
+        </form>
 
     </div>
 </body>
+
 
 </html>
