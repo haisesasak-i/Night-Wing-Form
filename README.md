@@ -78,4 +78,4 @@ Tweak these values to reskin the page without touching the layout rules.
 
 ## 📄 License
 
-This project is intended for personal/educational use. Update this section with your preferred license (e.g., MIT) if you plan to distribute it.
+This project is intended for personal/educational use.
