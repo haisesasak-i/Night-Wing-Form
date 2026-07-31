@@ -58,6 +58,7 @@ div.left {
 
     >p {
         width: 100%;
+
         text-align: center;
         font-size: var(--font-size-attribution);
         position: absolute;
