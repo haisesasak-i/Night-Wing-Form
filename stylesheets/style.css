@@ -7,6 +7,8 @@
     --font-family: 'Poppins', 'Century Gothic', Futura, sans-serif;
     --font-size-attribution: clamp(0.6rem, 0.6rem + 2vh, 1rem);
     --font-size-link-weight: bold;
+    --font-size-logo: 1.5rem;
+    --font-weight-logo: bold;
 }
 
 body {
@@ -17,11 +19,16 @@ body {
 
 }
 
+.flex {
+    display: flex;
+}
+
 div.left {
     width: var(--left-image-width);
     height: var(--left-image-height);
     background: url("/images/NightWing.jpg") center/cover no-repeat;
     position: relative;
+    justify-content: flex-start;
 
     >p {
         width: 100%;
@@ -38,5 +45,19 @@ div.left {
             }
 
         }
+
+    }
+
+    .logo {
+        width: 30%;
+        margin-top: 10%;
+
+        >p {
+            color: black;
+            font-size: var(--font-size-logo);
+            font-weight: var(--font-weight-logo);
+            text-align: center;
+        }
+
     }
 }
