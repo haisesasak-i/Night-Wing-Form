@@ -5,10 +5,17 @@
     --left-image-width: 30%;
     --left-image-height: 100%;
     --font-family: 'Poppins', 'Century Gothic', Futura, sans-serif;
-    --font-size-attribution: clamp(0.6rem, 0.6rem + 2vh, 1rem);
+    --font-size-attribution: clamp(0.6rem, 0.6rem + 2vw, 1rem);
     --font-size-link-weight: bold;
-    --font-size-logo: 1.5rem;
+    --font-size-logo: clamp(0.8rem, 0.8rem + 0.5vw, 1.5rem);
     --font-weight-logo: bold;
+    --font-size-header-main: clamp(0.5rem, 0.5rem + 2vw, 2rem);
+    --font-weight-header-main: bold;
+    --font-size-header-sub: clamp(0.3rem, 0.3rem + 2vw, 1.6rem);
+    --font-weight-header-sub: 600;
+    --text-color-header-sub: rgba(255, 255, 255, 0.91);
+    --margin-top-header-sub: 2%;
+
 }
 
 body {
@@ -16,6 +23,7 @@ body {
     height: var(--height-body);
     font-family: var(--font-family);
     color: var(--text-color-body);
+    gap: 10px;
 
 }
 
@@ -39,6 +47,7 @@ div.left {
 
         >a {
             font-weight: bold;
+            text-decoration: none;
 
             &:link {
                 color: var(--text-color-body);
@@ -49,7 +58,7 @@ div.left {
     }
 
     .logo {
-        width: 30%;
+        width: 40%;
         margin-top: 10%;
 
         >p {
@@ -59,5 +68,25 @@ div.left {
             text-align: center;
         }
 
+    }
+}
+
+div.right {
+    flex: 1;
+
+    .header {
+        >p {
+            font-size: var(--font-size-header-main);
+            font-weight: var(--font-weight-header-main);
+            width: 80%;
+        }
+
+        >p+p {
+            font-size: var(--font-size-header-sub);
+            font-weight: var(--font-weight-header-sub);
+            color: var(--text-color-header-sub);
+            margin-top: var(--margin-top-header-sub);
+
+        }
     }
 }
