@@ -93,13 +93,17 @@
 
             </div>
             <button>Join the Watch</button>
-            <p>Already have an account?<a href="#"> Login</a></p>
+            <p>Already have an account?<a class="link" href="#"> Login</a></p>
 
 
         </form>
 
     </div>
 </body>
+<script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (event) => event.preventDefault());
 
+</script>
 
 </html>
